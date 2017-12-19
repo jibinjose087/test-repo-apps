@@ -29,7 +29,7 @@ DEPLOY_DIR: '{{ APP_HOME }}/deploy'
 LOG_DIR: '/home/ansible_app_logs'
 BUILD_CONFIRMATION_FILE: '{{ DEPLOY_DIR }}/bin/BUILD'
 APP_LOG_FILE: '{{ LOG_DIR }}/{{ APP }}'
-PRIMARY_DEPLOY_NAME: pmservice
+PRIMARY_DEPLOY_NAME: pmserver
 PRIMARY_DEPLOY_DIR: '{{ APP_HOME }}/{{ PRIMARY_DEPLOY_NAME }}'
 #APP_PROGRAM_FILE: '{{ DEPLOY_DIR }}/bin/{{ APP }}.jar'
 
