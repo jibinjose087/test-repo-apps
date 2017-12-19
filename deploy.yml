@@ -1,0 +1,32 @@
+---
+# deploy.yml includes deployment stuffs
+
+# Roles defined for TMANSERVER application
+- hosts: dev_tman
+  roles:
+    - { role: tman, when: app_name == "tmanserver" }
+
+# Roles defined for PPLSERVICE application
+- hosts: dev_ppl
+  roles:
+    - { role: ppl, when: app_name == "pplservice" }
+
+# Roles defined for TRADEBATCH application
+- hosts: dev_tradebatch
+  roles:
+    - { role: tradebatch, when: app_name == "tradebatch" }
+
+# Roles defined for MDSSERVER application
+- hosts: dev_mds
+  roles:
+    - { role: mds, when: app_name == "mdsserver" }
+
+# Roles defined for PMSERVER application
+- hosts: dev_pmserv
+  roles:
+    - { role: pmsrv, when: app_name == "pmserver" }
+
+# Roles defined for FXIMPORT application
+- hosts: dev_fximp
+  roles:
+    - { role: fximp, when: app_name == "fximport" }
